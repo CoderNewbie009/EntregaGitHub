@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+.bud {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: center; }
+
+body {
+  background-color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+h1 {
+  margin-top: 0.5rem;
+  background-color: transparent;
+  color: #645f5f;
+  text-align: center;
+  font-style: normal;
+  font-weight: 70px;
+  text-shadow: 0.2px 0.2px 0.2px yellow; }
+
+h2 {
+  background-color: transparent;
+  color: #645f5f;
+  text-align: center;
+  font-style: normal;
+  text-shadow: 0.2px 0.2px 0.2px yellow; }
+
+/* estilos de la Menu */
+.navbar.navbar-expand-lg.bg-light {
+  padding: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+  border-radius: 2rem;
+  text-shadow: 0.2px 0.2px 0.2px yellow;
+  z-index: 1; }
+
+.row.row-cols-1.row-cols-md-2.g-4 {
+  text-align: center;
+  justify-content: center;
+  text-shadow: 0.2px 0.2px 0.2px yellow; }
+
+.row.row-cols-1.row-cols-md-4.g-4 {
+  text-align: center;
+  justify-content: center;
+  text-shadow: 0.2px 0.2px 0.2px yellow; }
+
+.footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center; }
+
+.derechos {
+  font-size: medium;
+  text-shadow: 0.2px 0.2px 0.2px black; }
+
+.derechos2 {
+  font-size: x-small;
+  text-shadow: 0.2px 0.2px 0.2px black; }
