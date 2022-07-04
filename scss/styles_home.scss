@@ -1,10 +1,12 @@
-// reset
+//reset
 *{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+//Importación de las variables
+@import "utilities/variables";
+
 //Caracteristias de imágen central
 .bud{
 display: flex;
@@ -13,25 +15,22 @@ flex-flow: row wrap;
 justify-content: center;
 }
 body{
-background-color: white;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+background-color: $color-background;
+font-family: $fuente-familia;
 }
-//Titulo de la pÃ¡gina
-h1{
-margin-top: 0.5rem;
+//Nesting en Titulo de la página
+header{
 background-color: transparent;
-color: rgb(100, 95, 95);
 text-align: center;
-font-style: normal;
-font-weight: 70px;
-text-shadow: 0.2px 0.2px 0.2px yellow;
-}
-h2{
-background-color: transparent;
-color: rgb(100, 95, 95);
-text-align: center;
-font-style: normal;
-text-shadow: 0.2px 0.2px 0.2px yellow;
+    h1{
+    color: $color-head;
+    font-style: normal;
+    font-weight: 70px;
+    }
+    h2{
+    color: $color-head;
+    font-style: oblique;
+    }
 }
 //Estilos de la Menu Hamburguesa Boostrap
 .navbar.navbar-expand-lg.bg-light{
@@ -40,23 +39,22 @@ position: absolute;
 left: 50%;
 transform: translatex(-50%);
 border-radius: 2rem;
-text-shadow: 0.2px 0.2px 0.2px yellow;
+text-shadow: $sombra-texto;
 z-index: 1;
 }
-.p_uno{
+// Estilos de los textos de los cuadors de inofrmación
+.cuerpo{
 text-align: center;
-background-color: beige;
-text-shadow: 0.2px 0.2px 0.2px yellow;
+text-shadow: $sombra-texto;
+.p_uno{
+background-color: $color-cuadro1;
 }
 .p_dos{
-text-align: center;
-background-color: rgb(248, 249, 250);
-text-shadow: 0.2px 0.2px 0.2px yellow;
+background-color: $color-cuadro2;
 }
 .p_tres{
-text-align: center;
-background-color: beige;
-text-shadow: 0.2px 0.2px 0.2px yellow;
+background-color: $color-cuadro1;
+}
 }
 .caja_uno{
 background-image: url(../img/budismo.jpg);
@@ -68,10 +66,9 @@ margin: 0px 0px 2px 0px;
 //Popiedad del Padding (Tamaño Interno)
 padding: 90px;
 //Propiedad Border (Tamaño del brode)
-border: 2px solid yellow;
+border: $borde-cuadro;
 font-size: 20px;
-color: whitesmoke;
-text-shadow: 2px 2px 2px black;
+text-shadow: $sombra-texto;
 }
 .caja_uno:hover{
     border-radius: 20%;
@@ -86,10 +83,9 @@ margin: 0px 0px 2px 0px;
 //Popiedad del Padding (Tamaño Interno)
 padding: 90px;
 //Propiedad Border (Tamaño del brode)
-border: 2px solid yellow;
+border: $borde-cuadro;
 font-size: 20px;
-color: whitesmoke;
-text-shadow: 2px 2px 2px black;
+text-shadow: $sombra-texto;
 }
 .caja_dos:hover{
 border-radius: 20%;
@@ -104,88 +100,27 @@ margin: 0px 0px 2px 0px;
 // Popiedad del Padding (TamaÃ±o Interno)
 padding: 90px;
 // Propiedad Border (TamaÃ±o del brode)
-border: 2px solid yellow;
+border: $borde-cuadro;
 font-size: 20px;
-color: whitesmoke;
-text-shadow: 2px 2px 2px black;
+text-shadow: $sombra-texto;
 }
 .caja_tres:hover{
 border-radius: 20%;
 }
-.producto{
-background-image: url(../img/producto.jpg);
-background-repeat: no-repeat;
-background-position: left;
-background-size: cover;
-margin: 2px 0px 2px 0px;
-padding: 90px;
-border: 2px solid yellow;
-font-size: 50px;
-color: whitesmoke;
-text-shadow: 2px 2px 2px black;
-}
-.producto:hover{
-border-radius: 20%;
-}
-.producto_uno{
-background-image: url(../img/producto_uno.jpg);
-background-repeat: no-repeat;
-background-position: left;
-background-size: cover;
-margin: 2px 0px 2px 0px;
-padding: 90px;
-border: 2px solid yellow;
-font-size: 50px;
-color: whitesmoke;
-text-shadow: 2px 2px 2px black;
-} 
-.producto_uno:hover{
-border-radius: 20%;
-}
-.producto_dos{
-background-image: url(../img/producto_dos.jpg);
-background-repeat: no-repeat;
-background-position: left;
-background-size: cover;
-margin: 2px 0px 2px 0px;
-padding: 90px;
-border: 2px solid yellow;
-font-size: 50px;
-color: whitesmoke;
-text-shadow: 2px 2px 2px black;
-} 
-.producto_dos:hover{
-border-radius: 20%;
-} 
-.producto_tres{
-background-image: url(../img/producto_tres.jpg);
-background-repeat: no-repeat;
-background-position: left;
-background-size: cover;
-margin: 2px 0px 2px 0px;
-padding: 90px;
-border: 2px solid yellow;
-font-size: 50px;
-color: whitesmoke;
-text-shadow: 2px 2px 2px black;
-}
-.producto_tres:hover{
-border-radius: 20%;
-}                      
+
 //Propiedades del footer
 .footer{
-padding-top: 10px;
-padding-bottom: 10px; 
-text-align: center;  
-}
-.derechos{
-font-size: medium;
-text-shadow: 0.2px 0.2px 0.2px black;
-}
-.derechos2{
-font-size: x-small;
-text-shadow: 0.2px 0.2px 0.2px black;
-}
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    text-align: center;
+    text-shadow: $sombra-texto-dos;  
+    .derechos{
+    font-size: medium;
+    }
+    .derechos2{
+    font-size: x-small;
+    }
+    }
 .cuerpo{
 height: 3vh
 }
