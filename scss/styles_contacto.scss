@@ -1,38 +1,39 @@
 //reset
+
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 //Importación de las variables
 @import "utilities/variables";
 
 //Caracteristias de imágen central
 .bud{
-    display: flex;
-    flex-direction: row;
-    flex-flow: row wrap;
-    justify-content: center;
-}
-body{
-    background-color: $color-background;
-    font-family: $fuente-familia;
-    }
-//Nesting en Titulo de la página
-header{
-    background-color: transparent;
-    text-align: center;
-    h1{
-        color: $color-head;
-        font-style: normal;
-        font-weight: 70px;
-    }
-    h2{
-        color: $color-head;
-        font-style: oblique;
-    }
+display: flex;
+flex-direction: row;
+flex-flow: row wrap;
+justify-content: center;
 }
 
+body{
+background-color: $color-background;
+font-family: $fuente-familia;
+}
+//Nesting en Titulo de la página
+header{
+background-color: transparent;
+text-align: center;
+    h1{
+    color: $color-head;
+    font-style: normal;
+    font-weight: 70px;
+    }
+    h2{
+    color: $color-head;
+    font-style: oblique;
+    }
+}
 // estilos de la Menu 
 .navbar.navbar-expand-lg.bg-light{
 padding: 10px;
@@ -40,7 +41,7 @@ position: absolute;
 left: 50%;
 transform: translatex(-50%);
 border-radius: 2rem;
-text-shadow: 0.2px 0.2px 0.2px yellow;
+text-shadow: $sombra-texto;
 z-index: 1;
 }
 .row{
@@ -60,12 +61,10 @@ z-index: 1;
     padding-bottom: 10px; 
     text-align: center;
     text-shadow: $sombra-texto-dos;  
-        .derechos{
-        font-size: medium;
-        }
-        .derechos2{
-        font-size: x-small;
-        }
+    .derechos{
+    font-size: medium;
     }
-//form
-
+    .derechos2{
+    font-size: x-small;
+    }
+}
