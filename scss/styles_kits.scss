@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-align: center;
 }
 //Importación de las variables
 @import "utilities/variables";
@@ -22,36 +23,22 @@ body{
 header{
     background-color: transparent;
     text-align: center;
-    h1{
-        color: $color-head;
-        font-style: normal;
-        font-weight: 70px;
-    }
-    h2{
-        color: $color-head;
-        font-style: oblique;
-    }
 }
+h1{
+    color: $color-head;
+    text-shadow: $sombra-texto;
+    text-align: center;
+    }
 /* estilos de la Menu */
 .navbar.navbar-expand-lg.bg-light{
-padding: 10px;
-position: absolute;
-left: 50%;
-transform: translatex(-50%);
-border-radius: 2rem;
-text-shadow: $sombra-texto-dos;
-z-index: 1;
-}
-.row.row-cols-1.row-cols-md-2.g-4{
-text-align: center;
-justify-content: center;
-text-shadow: $sombra-texto-dos;
-}
-.row.row-cols-1.row-cols-md-4.g-4{
-text-align: center;
-justify-content: center;
-text-shadow: $sombra-texto-dos;
-}
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    border-radius: 2rem;
+    text-shadow: $sombra-texto;
+    z-index: 1;
+    }
 .footer{
     padding-top: 10px;
     padding-bottom: 10px; 

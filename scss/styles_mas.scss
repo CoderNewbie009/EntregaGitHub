@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-align: center;
 }
 //Importación de las variables
 @import "utilities/variables";
@@ -15,23 +16,19 @@
     justify-content: center;
 }
 body{
-    background-color: $color-backgroun;
+    background-color: $color-background;
     font-family: $fuente-familia;
     }
 //Nesting en Titulo de la página
 header{
     background-color: transparent;
     text-align: center;
-    h1{
-        color: $color-head;
-        font-style: normal;
-        font-weight: 70px;
-    }
-    h2{
-        color: $color-head;
-        font-style: oblique;
-    }
 }
+h1,h2{
+    color: $color-head;
+    text-shadow: $sombra-texto;
+    text-align: center;
+    }
 //Nesting en estilos de la Menu
 header{
     position:relative;
@@ -42,32 +39,31 @@ header{
     justify-content: center;
     }
 }
+.navbar.navbar-expand-lg.bg-light{
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    border-radius: 2rem;
+    text-shadow: $sombra-texto;
+    z-index: 1;
+    }
+.table{
+    background-color: rgb(187, 230, 117);
+}
 main{
     text-align: center;
-    .cuerpo{
-    font-family: 'Courier New', Courier, monospace;
-    }
-    .p_uno{
-        background-color: $color-parrafo;
-    }
-    .p_dos{
-        background-color: $color-parrafo;
-    }
-    .p_tres{
-        background-color: $color-parrafo;
-    }
 }
 //Nesting en el Footer
 footer{
     padding-top: 10px;
     padding-bottom: 10px; 
     text-align: center;
+    text-shadow: $sombra-texto-dos; 
     .derechos{
         font-size: smaller ;
-        color: $color-footer;
     }
     .derechos2{
         font-size: small;
-        color: $color-footer;
     }
     }

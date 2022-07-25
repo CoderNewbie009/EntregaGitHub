@@ -5,13 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss scss/styles_home.scss css/styles_home.css",
-    "build-css": "node-sass --include-path scss scss/styles_tienda.scss css/styles_tienda.css",
-    "build-css": "node-sass --include-path scss scss/styles_beneficios.scss css/styles_beneficios.css",
-    "build-css": "node-sass --include-path scss scss/styles_kits.scss css/styles_kits.css",
-    "build-css": "node-sass --include-path scss scss/styles_mas.scss css/styles_mas.css",
-    "build-css": "node-sass --include-path scss scss/styles_contacto.scss css/styles_contacto.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    "sass": "node-sass --watch scss -o css"
   },
   "repository": {
     "type": "git",
@@ -25,6 +19,6 @@
   "homepage": "https://github.com/CoderNewbie009/EntregaGit#readme",
   "devDependencies": {
     "node-sass": "^7.0.1",
-    "nodemon": "^2.0.18"
+    "nodemon": "^2.0.19"
   }
 }

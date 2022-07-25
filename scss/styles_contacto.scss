@@ -4,6 +4,7 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+text-align: center;
 }
 //Importación de las variables
 @import "utilities/variables";
@@ -24,16 +25,12 @@ font-family: $fuente-familia;
 header{
 background-color: transparent;
 text-align: center;
-    h1{
-    color: $color-head;
-    font-style: normal;
-    font-weight: 70px;
-    }
-    h2{
-    color: $color-head;
-    font-style: oblique;
-    }
 }
+h1,h2,.text-center.w-responsive.mx-auto.mb-5{
+    color: $color-head;
+    text-shadow: $sombra-texto;
+    }
+
 // estilos de la Menu 
 .navbar.navbar-expand-lg.bg-light{
 padding: 10px;

@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  text-align: center; }
 
 .bud {
   display: flex;
@@ -16,13 +17,10 @@ body {
 header {
   background-color: transparent;
   text-align: center; }
-  header h1 {
-    color: #645f5f;
-    font-style: normal;
-    font-weight: 70px; }
-  header h2 {
-    color: #645f5f;
-    font-style: oblique; }
+
+h1, h2, .text-center.w-responsive.mx-auto.mb-5 {
+  color: #645f5f;
+  text-shadow: 0.3px 0.3px 0.3px yellow; }
 
 .navbar.navbar-expand-lg.bg-light {
   padding: 10px;
@@ -30,7 +28,7 @@ header {
   left: 50%;
   transform: translatex(-50%);
   border-radius: 2rem;
-  text-shadow: 0.2px 0.2px 0.2px yellow;
+  text-shadow: 0.3px 0.3px 0.3px yellow;
   z-index: 1; }
 
 .row {
@@ -47,7 +45,7 @@ header {
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
-  text-shadow: 0.2px 0.2px 0.2px black; }
+  text-shadow: 0.8px 0.8px 0.8px black; }
   .footer .derechos {
     font-size: medium; }
   .footer .derechos2 {

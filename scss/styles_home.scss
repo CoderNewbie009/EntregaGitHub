@@ -3,6 +3,7 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+text-align: center
 }
 //Importación de las variables
 @import "utilities/variables";
@@ -18,19 +19,13 @@ body{
 background-color: $color-background;
 font-family: $fuente-familia;
 }
-//Nesting en Titulo de la página
 header{
-background-color: transparent;
-text-align: center;
-    h1{
-    color: $color-head;
-    font-style: normal;
-    font-weight: 70px;
+    background-color: transparent;
+    text-align: center;
     }
-    h2{
-    color: $color-head;
-    font-style: oblique;
-    }
+h1{
+color: $color-head;
+text-shadow: $sombra-texto;
 }
 //Estilos de la Menu Hamburguesa Boostrap
 .navbar.navbar-expand-lg.bg-light{
@@ -61,6 +56,9 @@ background-image: url(../img/budismo.jpg);
 background-repeat: no-repeat;
 background-position: left;
 background-size: cover;
+color: $color-text;
+text-shadow: $sombra-texto-dos;
+
 //Propiedad del margin (Tamaño Externo)
 margin: 0px 0px 2px 0px;
 //Popiedad del Padding (Tamaño Interno)
@@ -68,7 +66,6 @@ padding: 90px;
 //Propiedad Border (Tamaño del brode)
 border: $borde-cuadro;
 font-size: 20px;
-text-shadow: $sombra-texto;
 }
 .caja_uno:hover{
     border-radius: 20%;
@@ -78,6 +75,8 @@ background-image: url(../img/budismo1.jpg);
 background-repeat: no-repeat;
 background-position: left;
 background-size: cover;
+color: $color-text;
+text-shadow: $sombra-texto-dos;
 //propiedad del margin (Tamaño Externo)
 margin: 0px 0px 2px 0px;
 //Popiedad del Padding (Tamaño Interno)
@@ -85,7 +84,6 @@ padding: 90px;
 //Propiedad Border (Tamaño del brode)
 border: $borde-cuadro;
 font-size: 20px;
-text-shadow: $sombra-texto;
 }
 .caja_dos:hover{
 border-radius: 20%;
@@ -95,6 +93,8 @@ background-image: url(../img/budismo2.jpg);
 background-repeat: no-repeat;
 background-position: left;
 background-size: cover;
+color: $color-text;
+text-shadow: $sombra-texto-dos;
 //Propiedad del margin (TamaÃ±o Externo)
 margin: 0px 0px 2px 0px;
 // Popiedad del Padding (TamaÃ±o Interno)
@@ -102,7 +102,6 @@ padding: 90px;
 // Propiedad Border (TamaÃ±o del brode)
 border: $borde-cuadro;
 font-size: 20px;
-text-shadow: $sombra-texto;
 }
 .caja_tres:hover{
 border-radius: 20%;

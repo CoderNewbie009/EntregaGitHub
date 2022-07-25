@@ -22,16 +22,12 @@ font-family: $fuente-familia;
 header{
 background-color: transparent;
 text-align: center;
-    h1{
-    color: $color-head;
-    font-style: normal;
-    font-weight: 70px;
-    }
-    h2{
-    color: $color-head;
-    font-style: oblique;
-    }
 }
+h1{
+    color: $color-head;
+    text-shadow: $sombra-texto;
+    text-align: center;
+    }
     /* estilos de la Menu */
 .navbar.navbar-expand-lg.bg-light{
 padding: 10px;
@@ -43,6 +39,11 @@ text-shadow: $sombra-texto;
 z-index: 1;
     }
 
+.cuerpo{
+    height: 3vh;
+    text-shadow: $sombra-texto-dos;
+    color: $color-text;
+    font-size: 50px;
 .producto{
 background-image: url(../img/producto.jpg);
 background-repeat: no-repeat;
@@ -51,8 +52,6 @@ background-size: cover;
 margin: 2px 0px 2px 0px;
 padding: 90px;
 border: $borde-cuadro;
-font-size: 20px;
-text-shadow: $sombra-texto;
 }
 .producto:hover{
 border-radius: 20%;
@@ -65,9 +64,6 @@ background-size: cover;
 margin: 2px 0px 2px 0px;
 padding: 90px;
 border: $borde-cuadro;
-font-size: 20px;
-color: whitesmoke;
-text-shadow: $sombra-texto;
 }
 .producto_uno:hover{
 border-radius: 20%;
@@ -80,9 +76,6 @@ background-size: cover;
 margin: 2px 0px 2px 0px;
 padding: 90px;
 border: $borde-cuadro;
-font-size: 20px;
-color: whitesmoke;
-text-shadow: $sombra-texto;
 }
 .producto_dos:hover{
 border-radius: 20%;
@@ -95,18 +88,18 @@ background-size: cover;
 margin: 2px 0px 2px 0px;
 padding: 90px;
 border: $borde-cuadro;
-font-size: 20px;
-color: whitesmoke;
-text-shadow: $sombra-texto;
 }
 .producto_tres:hover{
 border-radius: 20%;
-}                     
+}
+}
+
 .footer{
 padding-top: 10px;
 padding-bottom: 10px; 
 text-align: center;
-text-shadow: $sombra-texto-dos;  
+text-shadow: $sombra-texto-dos; 
+color: $color-head; 
     .derechos{
     font-size: medium;
     }
@@ -114,9 +107,7 @@ text-shadow: $sombra-texto-dos;
     font-size: x-small;
     }
     }
-.cuerpo{
-    height: 3vh
-}
+
 /*Media queries*/
 @media screen and (min-width:600px) {
 .cuerpo{
